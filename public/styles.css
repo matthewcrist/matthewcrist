@@ -1,20 +1,110 @@
-html {border-top: 3px solid rgb(100,100,100)}
-
-body {padding: 0; background-color: rgb(248,242,242); font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size-adjust:0.488; font-weight:200; font-style: normal; max-width: 32em; margin: 3.125em auto; color: rgb(125,125,125)}
-
-a {color: rgb(00,66,99); text-decoration: none; border-bottom: 1px solid rgb(198,192,192)}
-  a:hover {border-color: rgb(00,66,99)}
-  
-h1 {margin: 0 auto 1.875em; width: 135px; height: 135px; background: url(mark.png) no-repeat top left; text-indent: -999em}
-
-p {margin: 0 0 0.9375em; font-size: 1em; line-height: 1.6; text-shadow: 1px 1px 1px rgba(255,255,255,0.75)}
-  p:last-child {margin: 0}
-  
-/* Just a little something for those smaller screens */
-@media all and (max-width: 36em) {
-  body {margin: 3.125em 2em}
+@font-face {
+    font-family: 'mark';
+    src: url('mark-regular.eot');
+    src: url('mark-regular.eot?#iefix') format('embedded-opentype'),
+         url('mark-regular.woff') format('woff'),
+         url('mark-regular.ttf') format('truetype'),
+         url('mark-regular.svg#markRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-@media all and (max-width: 30em) {
-  h1 {width: 115px; height: 115px; background-size: 115px 115px}
+body {
+	margin: 6em auto;
+	max-width: 40em;
+	background: rgb(240,240,240);
+	font-family: "proxima-nova", helvetica, arial, sans-serif;
+	font-weight: 300;
+	line-height: 1.6;
+	color: rgb(44,44,44);
+}
+
+	body p {
+		font-size: 1.25em;
+	}
+
+a {
+	color: rgb(63,148,207);
+	text-decoration: none;
+}
+
+p a {
+	border-bottom: 1px solid rgb(210,210,210);
+	font-weight: bold;
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;    /* FF3.7+ */
+	-o-transition: all 0.2s linear;      /* Opera 10.5 */
+	-webkit-transition: all 0.2s linear; /* Saf3.2+, Chrome */
+}
+
+	p a:hover {
+		color: rgb(206,10,49);
+	}
+
+.mark {
+	font-family: 'mark';
+	font-size: 4em;
+	line-height: 1.4;
+	float: left;
+	margin-left: -2.5em;
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;    /* FF3.7+ */
+	-o-transition: all 0.2s linear;      /* Opera 10.5 */
+	-webkit-transition: all 0.2s linear; /* Saf3.2+, Chrome */
+}
+
+	.mark a {
+		text-decoration: none;
+		color: rgb(206,10,49);
+		-moz-transition: all 0.2s linear;    /* FF3.7+ */
+		-o-transition: all 0.2s linear;      /* Opera 10.5 */
+		-webkit-transition: all 0.2s linear; /* Saf3.2+, Chrome */
+	}
+
+		.mark a:hover {
+			color: rgb(44,44,44);
+		}
+
+h1 {
+	padding: 0.25em 0 0;
+	line-height: 1;
+	font-size: 2.441em;
+}
+
+.group:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+  
+@media all and (max-width: 65em) {
+  .mark {
+  	margin-left: 0;
+  	margin-right: 0.5em;
+  }
+
+  header {
+	margin-bottom: 3em;
+  }
+}
+
+@media all and (max-width: 45em) {
+	body {
+		margin: 3em 1em;
+	}
+	
+	  .mark {
+	  	float: none;
+	  	margin: 0 auto 0.75em;
+	  }
+
+	  header {
+		margin-bottom: 0;
+	  }
+
+	  	header h1 {
+	  		margin: 0 0 0.5em;
+	  	}
 }
