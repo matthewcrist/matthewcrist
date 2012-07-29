@@ -93,6 +93,7 @@ h1 {
 @media all and (max-width: 45em) {
 	body {
 		margin: 3em 1em;
+		font-size: 0.9em;
 	}
 	
 	  .mark {
