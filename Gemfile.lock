@@ -31,5 +31,5 @@ PLATFORMS
 
 DEPENDENCIES
   heroku
-  sinatra (= 1.2.6)
+  sinatra
   unicorn

@@ -5,4 +5,4 @@ group :development do
   gem 'heroku'
 end
 
-gem 'sinatra', '1.2.6'
+gem 'sinatra'

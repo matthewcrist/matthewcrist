@@ -11,7 +11,7 @@
 
 body {
 	margin: 6em auto;
-	max-width: 40em;
+	max-width: 47em;
 	background: rgb(240,240,240);
 	font-family: "proxima-nova", helvetica, arial, sans-serif;
 	font-weight: 300;
@@ -21,14 +21,29 @@ body {
 
 	body p {
 		font-size: 1.25em;
+		margin: 0;
 	}
+
+.mark {
+	font-family: mark;
+	font-size: 3em;
+	margin-bottom: 0.5em;
+	float: left;
+	margin-right: 0.5em;
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;    /* FF3.7+ */
+	-o-transition: all 0.2s linear;      /* Opera 10.5 */
+	-webkit-transition: all 0.2s linear; /* Saf3.2+, Chrome */
+	color: rgb(206,10,49);
+}
+
+header {
+	margin-bottom: 1em;
+}
 
 a {
 	color: rgb(63,148,207);
 	text-decoration: none;
-}
-
-p a {
 	border-bottom: 1px solid rgb(210,210,210);
 	font-weight: bold;
 	transition: all 0.2s linear;
@@ -37,38 +52,30 @@ p a {
 	-webkit-transition: all 0.2s linear; /* Saf3.2+, Chrome */
 }
 
-	p a:hover {
+	a:hover {
 		color: rgb(206,10,49);
 	}
 
-.mark {
-	font-family: 'mark';
-	font-size: 4em;
-	line-height: 1.4;
+.section {
 	float: left;
-	margin-left: -2.5em;
-	transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;    /* FF3.7+ */
-	-o-transition: all 0.2s linear;      /* Opera 10.5 */
-	-webkit-transition: all 0.2s linear; /* Saf3.2+, Chrome */
+	margin-right: 4em;
 }
 
-	.mark a {
-		text-decoration: none;
-		color: rgb(206,10,49);
-		-moz-transition: all 0.2s linear;    /* FF3.7+ */
-		-o-transition: all 0.2s linear;      /* Opera 10.5 */
-		-webkit-transition: all 0.2s linear; /* Saf3.2+, Chrome */
+	.section ul, .section li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
 	}
 
-		.mark a:hover {
-			color: rgb(44,44,44);
-		}
-
 h1 {
-	padding: 0.25em 0 0;
+	margin: 0 0 0.5em;
+	padding: 0;
 	line-height: 1;
 	font-size: 2.441em;
+}
+
+h2 {
+	margin-bottom: 0;
 }
 
 .group:after {
@@ -78,15 +85,38 @@ h1 {
 	clear: both;
 	visibility: hidden;
 }
+
+footer {
+	clear: both;
+	padding-top: 1.5em;
+}
+
+	footer ul, footer li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+		footer ul {
+			border-top: 3px dotted rgb(200,200,200);
+			padding-top: .75em;
+		}
+
+		footer li {
+			font-size: 1em;
+			display: inline;
+			margin-right: 1em;
+			color: rgb(100,100,100);
+		}
+
+		footer a {
+			color: rgb(100,100,100);
+		}
   
 @media all and (max-width: 65em) {
-  .mark {
-  	margin-left: 0;
-  	margin-right: 0.5em;
-  }
-
-  header {
-	margin-bottom: 3em;
+  body {
+	margin: 3em 1em;
+	font-size: 0.9em;
   }
 }
 
@@ -95,17 +125,22 @@ h1 {
 		margin: 3em 1em;
 		font-size: 0.9em;
 	}
-	
-	  .mark {
-	  	float: none;
-	  	margin: 0 auto 0.75em;
-	  }
 
-	  header {
-		margin-bottom: 0;
-	  }
+		.section {
+			float: none;
+			margin-bottom: 1em;
+		}
 
-	  	header h1 {
-	  		margin: 0 0 0.5em;
-	  	}
+		.mark {
+			float: none;
+			margin-bottom: 1em;
+		}
+
+		footer ul {
+			padding-top: 1.5em;
+		}
+
+		footer li {
+			display: block;
+		}
 }
