@@ -10,13 +10,13 @@
 }
 
 body {
-	margin: 6em auto;
+	margin: 7em auto;
 	max-width: 47em;
-	background: rgb(77,166,216);
+	background: hsla(180,14%,99%,1);
 	font-family: "proxima-nova", helvetica, arial, sans-serif;
 	font-weight: 300;
 	line-height: 1.6;
-	color: rgb(255,255,255);
+	color: hsla(210,27%,24%,1);
 }
 
 	body p {
@@ -35,7 +35,7 @@ body {
 	-moz-transition: all 0.2s linear;    /* FF3.7+ */
 	-o-transition: all 0.2s linear;      /* Opera 10.5 */
 	-webkit-transition: all 0.2s linear; /* Saf3.2+, Chrome */
-	color: rgb(255,255,255);
+	color: hsla(4,76%,57%,1);
 }
 
 header {
@@ -43,9 +43,9 @@ header {
 }
 
 a {
-	color: rgb(255,255,255);
+	color: hsla(204,67%,54%,1);
 	text-decoration: none;
-	border-bottom: 1px solid rgba(255,255,255,0.35);
+	border-bottom: 1px solid hsla(204,67%,54%,0.35);
 	font-weight: bold;
 	transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;    /* FF3.7+ */
@@ -54,8 +54,8 @@ a {
 }
 
 	a:hover {
-		color: rgb(255,255,255);
-    border-bottom: 1px solid rgba(255,255,255,0.75);
+		color: hsla(204,59%,45%,1);
+    border-bottom: 1px solid hsla(204,67%,54%,0.75);
 	}
 
 .section {
@@ -73,14 +73,26 @@ a {
 h1 {
 	margin: 0 0 0.5em;
 	padding: 0;
-	line-height: 0.95;
+	line-height: 1.1;
 	font-size: 2.441em;
   font-weight: normal;
 }
 
 h2 {
 	margin-bottom: 0;
-  color: rgb(255,252,65);
+}
+
+i {
+  font-family: Georgia, serif;
+  font-weight: 100;
+}
+
+em {
+  color: hsla(204,8%,76%,1);
+}
+
+.soon {
+  color: hsla(4,76%,57%,1)
 }
 
 .group:after {
