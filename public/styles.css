@@ -42,7 +42,8 @@ a {
 
 .section {
 	float: left;
-	margin-right: 4em;
+	width: 30%;
+	margin-right: 3%;
 }
 
 	.section ul, .section li {
